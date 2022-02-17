@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { bg, disabled, light, primary, secondary } from '../assets/Colors'
+import { bg, light, primary, secondary } from '../assets/Colors'
 import NavBar from '../components/NavBar'
 import { tablet } from '../responsive/responsive'
 import TextField from '@mui/material/TextField';
+import BotNav from '../responsive/BotNav'
 
 const Container = styled.div`
     width: 100%;
@@ -75,6 +76,7 @@ const UploadImage = () => {
     return (
         <>
             <NavBar />
+            <BotNav />
             <Container>
                 <Wrapper>
                     <Title>Share your memories</Title>

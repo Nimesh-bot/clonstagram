@@ -6,6 +6,7 @@ import { mobile, tablet } from "../responsive/responsive"
 import EditPersonal from "../components/EditPersonal";
 import Security from "../components/Security";
 import NavBar from "../components/NavBar"
+import BotNav from '../responsive/BotNav'
 
 const Container = styled.div`
     width: 100%;
@@ -71,6 +72,7 @@ const Edit = () => {
     return (
         <>
             <NavBar />
+            <BotNav />
             <Container>
                 <Wrapper>
                     <TabsWrapper>

@@ -6,6 +6,7 @@ import { mobile, tablet } from "../responsive/responsive"
 import { useParams } from "react-router-dom"
 import NavBar from "../components/NavBar"
 import { useEffect, useState } from "react"
+import BotNav from '../responsive/BotNav'
 
 const Container = styled.div`
     width: 100%;
@@ -165,7 +166,7 @@ const Profile = () => {
     return (
         <>
             <NavBar />
-
+            <BotNav />
             <Container>
                 <Wrapper>
                     <Header>

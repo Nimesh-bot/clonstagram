@@ -81,7 +81,7 @@ const NavBar = () => {
     return (
         <Container>
             <Wrapper>
-                <Logo>Clonstagram</Logo>
+                <a style={{textDecoration: "none", color: "black"}} href="/"><Logo>Clonstagram</Logo></a>
                 <SearchBox>
                     <SearchIcon />
                     <Input placeholder="Search" />

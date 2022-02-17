@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { bg } from '../assets/Colors'
 import NavBar from '../components/NavBar'
+import BotNav from '../responsive/BotNav'
 import Posts from '../components/Posts'
 import Suggestions from '../components/Suggestions'
 import { mobile } from '../responsive/responsive'
@@ -30,12 +31,12 @@ const Home = () => {
   return (
       <>
         <NavBar />
+        <BotNav />
         <Contents>
             <Wrapper>
                 <Posts flexSize="60%"/>  
                 <Suggestions flexSize="30%" mWidth="15%"/>
             </Wrapper>
-
         </Contents>
       </>
   )
