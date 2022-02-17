@@ -160,3 +160,14 @@ export const otherUser = {
         }
     ],
 }
+
+export const tabsData = [
+    {
+        id: 1,
+        name: "Personal",
+    },
+    {
+        id: 2,
+        name: "Security",
+    }
+]

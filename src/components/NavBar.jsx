@@ -93,9 +93,6 @@ const NavBar = () => {
                     <NavItem>
                         <AddBoxOutlined sx={{fontSize: 25}}/>
                     </NavItem>
-                    <NavItem>
-                        <FavoriteBorderOutlined sx={{fontSize: 25}}/>
-                    </NavItem>
                     <NavItem href="/profile/:id">
                         {currentLocation === '/profile/me' ? (<Profile border={`2px solid ${primary}`} src={user.avatar} />) : (<Profile src={user.avatar} />)}
                     </NavItem>
