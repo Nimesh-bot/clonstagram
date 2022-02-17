@@ -1,11 +1,11 @@
 .custom-file-input {
-    color: transparent;
+    color: #333333;
   }
   .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   }
   .custom-file-input::before {
-    content: 'Change Avatar';
+    content: 'Choose Image';
     color: #11468F;
     display: inline-block;
     background: transparent;
@@ -25,5 +25,5 @@
     outline: 0;
   }
   .custom-file-input:active::before {
-    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+    background: -webkit-linear-gradient(top, #9edfff, #2d28af); 
   }

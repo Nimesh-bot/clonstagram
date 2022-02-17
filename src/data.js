@@ -171,3 +171,21 @@ export const tabsData = [
         name: "Security",
     }
 ]
+
+export const addphotoTabs = [
+    {
+        id: 1,
+        name: "Upload",
+        color: "#aeaeae"
+    },
+    {
+        id: 2,
+        name: "Confirm",
+        color: "#11468F"
+    },
+    {
+        id: 3,
+        name: "Finish",
+        color: "#aeaeae"
+    }
+]

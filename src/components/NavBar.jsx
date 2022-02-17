@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import { bg, light, primary, text } from '../assets/Colors';
-import { AddBoxOutlined, FavoriteBorderOutlined, Home, HomeOutlined } from '@mui/icons-material';
+import { AddBox, AddBoxOutlined, FavoriteBorderOutlined, Home, HomeOutlined } from '@mui/icons-material';
 import { user } from '../data';
 import { useLocation } from 'react-router-dom';
 import { mobile, tablet } from '../responsive/responsive';
@@ -48,7 +48,7 @@ const Input = styled.input`
     background-color: transparent;
 `
 const Navs = styled.div`
-    width: 15rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,8 +90,8 @@ const NavBar = () => {
                     <NavItem href="/">
                         {currentLocation === '/' ? (<Home sx={{fontSize: 25}}/>) : (<HomeOutlined sx={{fontSize: 25}}/>)}
                     </NavItem>
-                    <NavItem>
-                        <AddBoxOutlined sx={{fontSize: 25}}/>
+                    <NavItem href="/add">
+                        {currentLocation === '/add' ? (<AddBox sx={{fontSize: 25}}/>) : (<AddBoxOutlined sx={{fontSize: 25}}/>)}
                     </NavItem>
                     <NavItem href="/profile/:id">
                         {currentLocation === '/profile/me' ? (<Profile border={`2px solid ${primary}`} src={user.avatar} />) : (<Profile src={user.avatar} />)}
