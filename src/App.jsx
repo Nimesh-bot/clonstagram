@@ -6,6 +6,9 @@ import Register from './pages/Register'
 import Profile from './pages/Profile'
 import Edit from './pages/Edit'
 import Add from './pages/Add'
+import ForgotPassword from './pages/ForgotPassword'
+import OTP from './pages/OTP'
+import Reset from './pages/Reset'
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
             <Route path="/profile/:id" element={<Profile />} />
             <Route path="edit" element={<Edit />} />
             <Route path="/add" element={<Add />} />
+            <Route path="/forgot" element={<ForgotPassword />} />
+            <Route path="/forgot/otp" element={<OTP />} />
+            <Route path="/forgot/reset" element={<Reset />} />
         </Routes>
     </Router>
   )

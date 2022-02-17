@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
 
     ${mobile ({
@@ -62,6 +63,7 @@ export const InputContainer = styled.div`
     border-radius: 4px;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     margin: 0.5rem 0;
 `
 export const Link = styled.a`
@@ -150,7 +152,7 @@ const Login = () => {
                         
                     </InputContainer>
 
-                    <Link margin="0.5rem" href="/login/forgot">Forgot Password</Link>
+                    <Link margin="0.5rem" href="/forgot">Forgot Password</Link>
 
                     <Button onClick={handleClick}>SIGN IN</Button>
 
