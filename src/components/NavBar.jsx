@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
-import { bg, light } from '../assets/Colors';
+import { bg, light, primary, text } from '../assets/Colors';
 import { AddBoxOutlined, FavoriteBorderOutlined, Home, HomeOutlined } from '@mui/icons-material';
 import { user } from '../data';
 import { useLocation } from 'react-router-dom';
@@ -63,12 +63,15 @@ const Navs = styled.div`
 `
 const NavItem = styled.a`
     text-decoration: none;
+    color: ${text};
 `
 const Profile = styled.img`
     width: 1.75rem;
     height: 1.75rem;
     border-radius: 50%;
     object-fit: cover;
+    padding: 0.1rem;
+    border: ${props => props.border};
 `
 
 const NavBar = () => {
@@ -84,7 +87,7 @@ const NavBar = () => {
                     <Input placeholder="Search" />
                 </SearchBox>
                 <Navs>
-                    <NavItem>
+                    <NavItem href="/">
                         {currentLocation === '/' ? (<Home sx={{fontSize: 25}}/>) : (<HomeOutlined sx={{fontSize: 25}}/>)}
                     </NavItem>
                     <NavItem>
@@ -93,8 +96,8 @@ const NavBar = () => {
                     <NavItem>
                         <FavoriteBorderOutlined sx={{fontSize: 25}}/>
                     </NavItem>
-                    <NavItem>
-                        <Profile src={user.avatar} />
+                    <NavItem href="/profile/:id">
+                        {currentLocation === '/profile/me' ? (<Profile border={`2px solid ${primary}`} src={user.avatar} />) : (<Profile src={user.avatar} />)}
                     </NavItem>
                 </Navs>
             </Wrapper>

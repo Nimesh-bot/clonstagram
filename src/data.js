@@ -1,68 +1,162 @@
 export const user = {
     id: 1,
-    name: "John Doe",
+    fname: "John",
+    lname: "Doe",
+    name: "JohnDoe11",
     email: "john98@mail.com",
-    avatar: "https://i.pinimg.com/564x/93/e9/ed/93e9ed0335cc68c1e1a13dfc17b6822a.jpg"
+    avatar: "https://i.pinimg.com/564x/93/e9/ed/93e9ed0335cc68c1e1a13dfc17b6822a.jpg",
+    followers: [
+        {
+            id: 2,
+            name: "Sistine",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 3,
+            name: "Aho",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 4,
+            name: "Baka",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 5,
+            name: "Neechan",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 6,
+            name: "Lumine",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+    ],
+    following: [
+        {
+            id: 2,
+            name: "Sistine",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 3,
+            name: "Aho",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 4,
+            name: "Baka",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 5,
+            name: "Neechan",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+    ],
+    posts: [
+        {
+            id: 1,
+            title: "Post 1",
+            image: "https://i.pinimg.com/236x/aa/ee/79/aaee7966bc44b266ecfdca3fba7fbcf6.jpg",
+        },
+        
+        {
+            id: 2,
+            title: "Post 2",
+            image: "https://images-cdn.9gag.com/photo/aeMA8eW_700b.jpg",
+        },
+        
+        {
+            id: 3,
+            title: "Post 3",
+            image: "https://c.tenor.com/I-YJHQQ1v1gAAAAd/random-anime.gif",
+        }
+    ],
 }
 
-export const postsData = [
-    {
-        id: 1,
-        title: "Yahallo",
-        image: "https://img5.goodfon.com/wallpaper/nbig/f/b0/yui-yuigahama-oregairu-devushka-shkolnitsa-nebo-vecher.jpg",
-        postedBy: "ExtremeWeeb11",
-        postedOn: "2 days ago",
-        liked: false,
-        comments: false,
-        avatar: "https://i.pinimg.com/564x/4a/cc/43/4acc439bb9275683ed786f79526b8f35.jpg",
-        content: "Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euism",
-        comments: [
-            {
-                id: 1,
-                comment: "euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt ",
-                postedBy: "Jimmy Harpins",
-                postedOn: "1 day ago",
-                avatar: "https://i.pinimg.com/736x/70/af/b6/70afb680fddd3273d1d5fe4a34cc35a5.jpg"
-            },
-        ],
-    },
-    {
-        id: 2,
-        title: "Post 1",
-        image: "https://www.agiledrop.com/sites/default/files/styles/team_member_thumbnail/public/2021-08/Tilen%20G..png?itok=p9Q1Wt4a",
-        postedBy: "Jimmy Harpin",
-        postedOn: "1 day ago",
-        liked: false,
-        comments: false,
-        avatar: "https://i.pinimg.com/736x/70/af/b6/70afb680fddd3273d1d5fe4a34cc35a5.jpg",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euism",
-        comments: [
-            {
-                id: 1,
-                comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt consectetur, nisi nunc egestas nunc, euismod aliquet nunc nisl eget ipsum. Sed euismod, urna eu tincidunt ",
-                postedBy: "John Doe",
-                postedOn: "1 day ago",
-                avatar: "https://i.pinimg.com/564x/93/e9/ed/93e9ed0335cc68c1e1a13dfc17b6822a.jpg"
-            },
-        ],
-    },
-]
 
 export const getUsers = [
     {
-        id: 1,
-        name: "Silly",
-        avatar: "https://i.pinimg.com/736x/56/ab/bf/56abbf782771ac4cf669e90de78df75c.jpg",
+        id: 2,
+        name: "Sistine", 
+        avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg",
+    },
+    {
+        id: 3,
+        name: "Silly", 
+        avatar: "https://i.pinimg.com/474x/d8/e8/fd/d8e8fda285601c2bc45d55b449de9057.jpg",
     },
     {
         id: 2,
-        name: "Billy",
-        avatar: "https://i.pinimg.com/564x/15/76/8f/15768fccfc80f29241006bdc93d8bfa7.jpg",
+        name: "Billy", 
+        avatar: "https://i.pinimg.com/474x/77/42/68/7742680e65f70ba564f532fe8aa54cc4.jpg",
     },
-    {
-        id: 2,
-        name: "Milly",
-        avatar: "https://i.pinimg.com/564x/fc/e1/9d/fce19dd3e85c7fa376445f4ad8804f6b.jpg",
-    }
-
 ]
+
+export const otherUser = {
+    id: 2,
+    fname: "Sissy",
+    lname: "Tinkle",
+    name: "Sistine",
+    email: "bakabaka@mail.com",
+    avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg",
+    followers: [
+        {
+            id: 1,
+            name: "JohnDoe11",
+            avatar: "https://i.pinimg.com/564x/93/e9/ed/93e9ed0335cc68c1e1a13dfc17b6822a.jpg" 
+        },
+        {
+            id: 3,
+            name: "Aho",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 4,
+            name: "Baka",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 5,
+            name: "Neechan",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+        {
+            id: 6,
+            name: "Lumine",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        },
+    ],
+    following: [
+        {
+            id: 1,
+            name: "JohnDoe11",
+            avatar: "https://i.pinimg.com/564x/93/e9/ed/93e9ed0335cc68c1e1a13dfc17b6822a.jpg" 
+        },
+        {
+            id: 4,
+            name: "Baka",
+            avatar: "https://i.pinimg.com/564x/6a/eb/48/6aeb48f63217bdc3e06bba060380b277.jpg" 
+        }, 
+    ],
+    posts: [
+        {
+            id: 4,
+            title: "Post 1",
+            image: "https://i.imgur.com/2QYrqiS.gif",
+        },
+        
+        {
+            id: 5,
+            title: "Post 2",
+            image: "https://thumbs.gfycat.com/TangibleQuarterlyBergerpicard-size_restricted.gif",
+        },
+        
+        {
+            id: 6,
+            title: "Post 3",
+            image: "https://i.imgur.com/lz4I3F4.jpg",
+        }
+    ],
+}
