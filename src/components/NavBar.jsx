@@ -39,7 +39,7 @@ const SearchBox = styled.div`
     justify-content: space-between;
     
     ${mobile({
-        display: "none"
+        width: "5rem", 
     })}
 `
 const Input = styled.input`
@@ -83,8 +83,8 @@ const NavBar = () => {
             <Wrapper>
                 <a style={{textDecoration: "none", color: "black"}} href="/"><Logo>Clonstagram</Logo></a>
                 <SearchBox>
-                    <SearchIcon />
                     <Input placeholder="Search" />
+                    <SearchIcon />
                 </SearchBox>
                 <Navs>
                     <NavItem href="/">

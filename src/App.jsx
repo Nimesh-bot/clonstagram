@@ -9,6 +9,7 @@ import Add from './pages/Add'
 import ForgotPassword from './pages/ForgotPassword'
 import OTP from './pages/OTP'
 import Reset from './pages/Reset'
+import SearchResult from './pages/SearchResult'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/forgot" element={<ForgotPassword />} />
             <Route path="/forgot/otp" element={<OTP />} />
             <Route path="/forgot/reset" element={<Reset />} />
+            <Route path="/search/:id" element={<SearchResult />} />
         </Routes>
     </Router>
   )
